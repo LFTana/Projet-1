@@ -1,8 +1,9 @@
 a=input("entrez le premier nombre binaire")
 b=input("entre le second nombre binaire")
-def f(x):      #c'est la fonction pour convertire decimale binaire :)#
+s=input("Entrer le signe de l'opération")
+def f(x):      #c'est la fonction pour convertir decimale binaire :)#
     xdec=int(0)
-    r=int(len(x))-1 #c'est le rand pour l'opération
+    r=int(len(x))-1 #c'est le rang pour l'opération
     for str in x:
         if str=="1":
             xdec=xdec+(1*2**r)
@@ -10,4 +11,12 @@ def f(x):      #c'est la fonction pour convertire decimale binaire :)#
         else:
             r=r-1
     return(xdec)
-print(f(a))   #sa vas afficher la converssion de a en decimale
+if s == "+":
+    e = e+f(a)+f(b)
+if s == "-":
+    e= e+f(a)-f(b)
+if s== "*":
+    e= e+f(a)*f(b)
+if s== "/":
+    e= e+f(a)/f(b)
+print(bin(e)) #grâce a la fonction "bin" sur python on peut directement convertir les nombres décimal en binaire après l'opération
