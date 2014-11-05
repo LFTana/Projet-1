@@ -1,0 +1,13 @@
+a=input("entrez le premier nombre binaire")
+b=input("entre le second nombre binaire")
+def f(x):      #c'est la fonction pour convertire decimale binaire :)#
+    xdec=int(0)
+    r=int(len(x))-1 #c'est le rand pour l'opération
+    for str in x:
+        if str=="1":
+            xdec=xdec+(1*2**r)
+            r=r-1
+        else:
+            r=r-1
+    return(xdec)
+print(f(a))   #sa vas afficher la converssion de a en decimale
