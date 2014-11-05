@@ -19,4 +19,4 @@ if s== "*":
     e= e+f(a)*f(b)
 if s== "/":
     e= e+f(a)/f(b)
-print(bin(e)) #grâce a la fonction "bin" sur python on peut directement convertir les nombres décimal en binaire après l'opération
+print(a,s,b,"="bin(e)) #g la fonction "bin" sur python converti les nombres décimal en binaire après l'opération
