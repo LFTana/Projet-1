@@ -1,5 +1,5 @@
-a=input("entrez le premier nombre binaire")
-b=input("entre le second nombre binaire")
+a=input("entrez le premier nombre binaire:")
+b=input("entre le second nombre binaire:")
 def f(x):      #c'est la fonction pour convertir decimale binaire :)#
     xdec=int(0)
     r=int(len(x))-1 #c'est le rang pour l'opération
