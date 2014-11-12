@@ -21,7 +21,7 @@ if s== "*":
     e= f(a)*f(b)
 if s== "/":
     e= f(a)/f(b)
-else :
+elif s!="+" and s!="-" and s!="*" and s!="/":
     print("veuillez recommencer l'opération")
 print(a,s,b,"=",bin(e)) #g la fonction "bin" sur python converti les nombres décimal en binaire après l'opération
 
