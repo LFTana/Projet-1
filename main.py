@@ -1,7 +1,7 @@
 #### Calculatrice Binaire :D ###
-a=input("entrez le premier nombre binaire")
-s=input("Entrer le signe de l'opération")
-b=input("entre le second nombre binaire")
+a=input("entrez le premier nombre binaire: ")
+s=input("Entrer le signe de l'opération: ")
+b=input("entre le second nombre binaire: ")
 e=0
 def f(x):      #c'est la fonction pour convertir decimale binaire :)#
     xdec=int(0)
