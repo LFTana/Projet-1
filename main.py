@@ -13,15 +13,23 @@ def f(x):      #c'est la fonction pour convertir decimale binaire :)#
         else:
             r=r-1
     return(xdec)
-if s == "+":
+if "," in a or b:
+     print("Cette calculatrice ne prend pas en charge les nombres décimal")
+elif s == "+":
     e = f(a)+f(b)
-if s == "-":
+    print(a,s,b,"=",bin(e)[2:])
+elif s == "-":
     e= f(a)-f(b)
-if s== "*":
+    print(a,s,b,"= -",bin(e)[3:])
+elif s== "*":
     e= f(a)*f(b)
-if s== "/":
+    print(a,s,b,"=",bin(e)[2:])
+elif s== "/":
     e= f(a)/f(b)
+    if type(e)!= int:
+        print("Cette calculatrice ne prend pas en charge les nombres décimal")
+    print(a,s,b,"=",bin(int(e))[2:])
 elif s!="+" and s!="-" and s!="*" and s!="/":
     print("veuillez recommencer l'opération")
-print(a,s,b,"=",bin(e)) #g la fonction "bin" sur python converti les nombres décimal en binaire après l'opération
+
 
