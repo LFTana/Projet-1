@@ -13,9 +13,7 @@ def f(x):      #c'est la fonction pour convertir decimale binaire :)#
         else:
             r=r-1
     return(xdec)
-if "," in a or b:
-     print("Cette calculatrice ne prend pas en charge les nombres décimal")
-elif s == "+":
+if s == "+":
     e = f(a)+f(b)
     print(a,s,b,"=",bin(e)[2:])#pour afficher le résultat sans le 0b
 elif s == "-":
@@ -31,5 +29,7 @@ elif s== "/":
     print(a,s,b,"=",bin(int(e))[2:])# pyhton ne prend pas les type float donc il faut préciser le int
 elif s!="+" and s!="-" and s!="*" and s!="/":
     print("veuillez recommencer l'opération")
+elif "," in a or b:
+     print("Cette calculatrice ne prend pas en charge les nombres décimal")
 
 
