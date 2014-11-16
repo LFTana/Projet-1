@@ -17,7 +17,7 @@ if "," in a or b:
      print("Cette calculatrice ne prend pas en charge les nombres décimal")
 elif s == "+":
     e = f(a)+f(b)
-    print(a,s,b,"=",bin(e)[2:])
+    print(a,s,b,"=",bin(e)[2:])#pour afficher le résultat sans le 0b
 elif s == "-":
     e= f(a)-f(b)
     print(a,s,b,"= -",bin(e)[3:])
@@ -28,7 +28,7 @@ elif s== "/":
     e= f(a)/f(b)
     if type(e)!= int:
         print("Cette calculatrice ne prend pas en charge les nombres décimal")
-    print(a,s,b,"=",bin(int(e))[2:])
+    print(a,s,b,"=",bin(int(e))[2:])# pyhton ne prend pas les type float donc il faut préciser le int
 elif s!="+" and s!="-" and s!="*" and s!="/":
     print("veuillez recommencer l'opération")
 
